@@ -1,0 +1,15 @@
+Para este proyecto si que tuve tres obstaculos que se me hicieron bola hasta poder resolverlos:
+
+En lo que mas tiempo inverti y más me costó fue hacer el movimiento fluido (el juego trata de una bola bajando un a ladera mientras aumenta su velocidad y tú tienes que esquivar, de lado a lado, obstaculos),
+dado que o la bola iba a trompicones o cogía demasiada velocidad o directamente ni si quiera iba para abajo y empezaba a flotar. Entonces tuve que hacer varios cambios en el codigo,
+por ejemplo a la bola le di su direccion "forward" paralela a la inclinacion de la ladera y luego con una formula de fisica basica ya estaría el movimiento hacia abajao con aceleración.
+Para el movimiento lateral, en un inicio fue pensado un deslizamineto del dedo por la pantalla, pero dio bastantes fallos y no funcionaba, entonces lo descarté y cambié por un sitema
+que dependiendo del lado de la pantalla que pulses (un boton de mitad de la pantalla a derecha y otro hacia izquierda) va a un lado o a otro.
+
+Otro obstaculo fue el crecimiento de la bola, dado que crecia o muy de golpe o muy muy lento (lo mismo para el decrecimiento), al final con un sistema de "Ifs" dentro de la modificacion de la escala
+conseguí que fuera mas o menos fluido.
+
+Y el ultimo problema fue la atracción de las monedas cuando coges el powerUp del Imán, este se arregló poniendo un collider más grande que se activase cuando recogieses el powerUp 
+y que las monedas dentro del rango, se moviesen hasta la posicion del jugador, mediante el uso de la función Lerp.
+
+He de decir que el como quedó al final el movimiento de la bola(jugador) fue lo que mas orgullo me da del codigo, dada su fluided.
